@@ -11,18 +11,15 @@ public:
         int st=0,ed=s.length()-1;
         while(st<ed){
             if(!isalphanum(s[st])){
-                st++;
-                continue;
+                st++;continue;
             }
             if(!isalphanum(s[ed])){
-                ed--;
-                continue;
+                ed--;continue;
             }
             if(tolower(s[st])!=tolower(s[ed])){
                 return false;
             }
-            st++;
-            ed--;
+            st++;ed--;
 
         }
         return true;
